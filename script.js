@@ -2,7 +2,7 @@ testar();
 
 function testar(){
     var mensagem = "Olá mundo"
-    alert(mensagem);
+    //alert(mensagem);
     
     var a = 2;
     var b = 3;
@@ -80,4 +80,29 @@ function testarArray(){
         console.log(i);
         console.log(lista[i]);
     }
+}
+
+function mensagem(nome){
+    alert(`Clicou ${nome}`);
+}
+
+function voltaAqui(nome){
+    alert(`Volta aqui ${nome}`);
+}
+
+function mudaCor(cor, size)
+{
+    var elemento = document.getElementById("mensagem");
+    elemento.style.color = cor;
+    elemento.style.fontSize = size;
+}
+
+function validar() {
+    var nome = document.getElementById("nome");
+    if (nome.value == "") {
+        alert("Nome não informado.");
+    }
+    else {
+        alert(nome.value);
+    }    
 }
