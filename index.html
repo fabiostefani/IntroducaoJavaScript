@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meu primeiro site com Bootstrap</title>
+
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Popovers</h1>
+        <button class="btn btn-primary" title="Título do popover" data-toggle="popover"
+            data-content="Aqui é conteúdo do meu popover" data-placement="top">Meu
+            popover</button>
+
+        <button class="btn btn-primary" title="Título do popover" data-toggle="popover"
+            data-content="Aqui é conteúdo do meu popover" data-placement="left">Meu
+            popover</button>
+
+        <button class="btn btn-primary" title="Título do popover" data-toggle="popover"
+            data-content="Aqui é conteúdo do meu popover" data-placement="right">Meu
+            popover</button>
+
+        <button class="btn btn-primary" title="Título do popover" data-toggle="popover"
+            data-content="Aqui é conteúdo do meu popover" data-placement="bottom">Meu
+            popover</button>
+    </div>
+
+    <div class="container">
+        <h1>Tooltips</h1>
+        <button class="btn btn-secondary" data-toggle="tooltip" title="Meu primeiro tooltip" data-placement="left">Meu
+            tooltip</button>
+
+        <button class="btn btn-secondary" data-toggle="tooltip" title="Meu primeiro tooltip" data-placement="top">Meu
+            tooltip</button>
+
+        <button class="btn btn-secondary" data-toggle="tooltip" title="Meu primeiro tooltip" data-placement="bottom">Meu
+            tooltip</button>
+
+        <button class="btn btn-secondary" data-toggle="tooltip" title="Meu primeiro tooltip" data-placement="right">Meu
+            tooltip</button>
+    </div>
+
+    <div class="container">
+        <h1>Modal</h1>
+        <button class="btn btn-info" data-toggle="modal" data-target="#conteudoModal">Ativar Modal</button>
+        <!-- --Modal-- -->
+        <div id="conteudoModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- --TíTulo-- -->
+                    <div class="modal-header">
+                        <h4>Meu modal</h4>
+                        <button class="close" data-dismiss="modal" aria-label="Fechar"></button>
+                        <span aria-hidden="true">&times;</span>
+                    </div>
+
+                    <!-- --Conteúdo-- -->
+                    <div class="modal-body">
+                        Texto do meu Modal
+                    </div>
+
+                    <!-- --Rodapé-- -->
+                    <div class="modal-footer">
+                        <button class="btn btn-success" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- <p>Olá Mundo</p>
+    <table class="table table-hover table-striped">
+        <tr>
+            <th>#</th>
+            <th>Cursos</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Bootstrap</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>HTML</td>
+        </tr>
+    </table> -->
+    <footer>
+        <script src="jquery-3.4.1.mim.js"></script>
+        <script src="public/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                $('[data-toggle="popover"]').popover()
+            });
+
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            });
+        </script>
+    </footer>
+</body>
+
+</html>
